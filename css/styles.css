@@ -1,0 +1,154 @@
+:root {
+  --Basic-red: #EE3643;
+  --Basic-green: #63A63E;
+  --Basic-grey: #3D546F;
+  --Basic-greylight: #C5C5C5;
+  --Basic-background: #F1F5F7;
+  --White: #FFFFFF;
+  --Special-yellow: #FFBF47;
+  --Special-blue: #3BBCE3;
+  --Special-lilac: #DC91D8;
+  --Special-greenlight: #8ED78F;
+  --Special-yellowlight: #FFD180;
+  --Success: #5FBB2D;
+  --Warning: #FFBF47;
+  --Error: #BA2732;
+}
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--White);
+  text-transform: none;
+
+  background-color: var(--Basic-background);
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header-top {
+  font-family: Cuprum;
+
+  background-color: transparent;
+}
+
+.main-header-top .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-bottom: 46px;
+
+  background-color: #293449;
+}
+
+.main-header-middle .wrapper {
+  display: grid;
+  grid-template-columns: 300px 300px 140px 140px;
+  grid-template-rows: 46px 26px;
+
+
+  grid-template-areas:
+    "main-page-title"    /* первый столбец грида */
+    "header-contact-phone"  /* второй стобец, верхняя ячейка грида */
+    "address" /* второй стобец, нижняя ячейка грида */
+    "login-link" /* третий столбец грида */
+    "signup-link" /* четвертый столбец грида */
+}
+
+.main-page-title {
+  grid-area: main-page-title;
+
+  margin-left: 30px;
+
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: var(--Basic-red);
+}
+
+.header-contact-phone {
+  grid-area: header-contact-phone;
+  grid-column: 2;
+  grid-row:3 / -2;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  text-decoration: none;
+  color: var(--Basic-red);
+}
+
+.address {
+  grid-area: address;
+  grid-column: 2;
+  grid-row: 2 / -3;
+
+  font-style: normal;
+  font-size: 14px;
+}
+
+.login-link {
+  grid-area: login-link;
+  grid-column: 3;
+  grid-row: 1;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.signup-link {
+  grid-area: signup-link;
+  grid-column: 4;
+  grid-row: 1;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-header-bottom {
+  width: 940px;
+  margin: 0;
+  padding: 0;
+  min-height: 60px;
+
+  font-family: Cuprum;
+  list-style: none;
+
+  background-color: #32425C;
+}
+
+.main-header-bottom .site-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.site-navigation-item a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+
+

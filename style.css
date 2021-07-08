@@ -281,6 +281,9 @@ background-color: transparent;
 }
 
 .red-btns {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
     text-decoration: none;
     color: var(--White);
     text-transform: uppercase;
@@ -288,14 +291,21 @@ background-color: transparent;
     background: var(--Basic-red);
 }
 
-.service h2 {
+.service h2,
+.company-info h3,
+.map h3 {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
 }
 
-.service p {
+.service p,
+.company-info p,
+.map p {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
@@ -304,18 +314,54 @@ background-color: transparent;
     color: #000000;
 }
 
-.company-info h3 {
-    font-size: 30px;
+.new-price {
+    text-decoration: none;
+    color: white;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.service-btn {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
     line-height: 30px;
-    text-transform: uppercase;
+}
+
+.transport-companies {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    list-style-image: url('img/list-line.svg');
+}
+
+.feedback-form label {
+    font-family: Cuprum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
     color: #000000;
 }
 
-.company-info p {
+.feedback-form input {
+    background: #FFFFFF;
+    border: 2px solid #C5C5C5;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.feedback-form ::placeholder {
     font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    color: #000000;
+    color: #A9A9A9;
 }
