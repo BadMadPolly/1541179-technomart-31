@@ -34,7 +34,6 @@
 .wrapper {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .main-header-top {
@@ -49,9 +48,65 @@
   justify-content: center;
 
   width: 100%;
+  margin: 0 auto;
+  height: 42px;
+
   margin-bottom: 46px;
 
   background-color: #293449;
+}
+
+.main-header-logo {
+  display: block;
+
+  width: 220px;
+  height: 47px;
+  margin-right: 50px;
+
+  background: #EE3643;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.main-header-logo img {
+  margin-top: 10px;
+  height: 18px;
+}
+
+.main-header-logo:active {
+  background-color: #BA2732;
+}
+
+
+.main-header-search input {
+  width: 140px;
+  margin-right: 50px;
+
+  color: var(--White);
+
+  background-color: transparent;
+
+  border: none;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-navigation .marks, .cart {
+  width: 110px;
+  margin-right: 30px;
+}
+
+.user-navigation a {
+  text-decoration: none;
+  color: white;
 }
 
 .main-header-middle .wrapper {
@@ -82,7 +137,7 @@
 .header-contact-phone {
   grid-area: header-contact-phone;
   grid-column: 2;
-  grid-row:3 / -2;
+  grid-row: 3 / -2;
 
   font-weight: bold;
   font-size: 21px;
@@ -124,8 +179,7 @@
 
 .main-header-bottom {
   width: 940px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   min-height: 60px;
 
   font-family: Cuprum;
@@ -137,7 +191,7 @@
 .main-header-bottom .site-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   padding: 0;
   margin: 0;
