@@ -547,6 +547,14 @@ img {
   justify-content: space-between;
 }
 
+.company-info {
+  width: 460px;
+}
+
+.map {
+  width: 300px;
+}
+
 .company-info h3,
 .map h3 {
   font-size: 30px;
@@ -564,6 +572,13 @@ img {
 
 .list-items-text {
   color: #000000;
+}
+
+.map-img {
+  margin-bottom: 25px;
+
+  width: 300px;
+  height: 158px;
 }
 
 
@@ -631,8 +646,8 @@ img {
   border: 1px solid #EAEAEA;
 }
 .product-card .photo {
-  display: block;
-  
+  padding: 6px 18px 8px;
+
   width: 184px;
   height: 164px;
 }
