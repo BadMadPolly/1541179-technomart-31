@@ -28,7 +28,7 @@
   color: var(--White);
   text-transform: none;
 
-  background-color: var(--Basic-background);
+  background-color: var(--White);
 }
 
 .wrapper {
@@ -311,28 +311,108 @@
 }
 
 /*========================= MAIN-POPULAR-ITEMS ==========================*/
+.popular-items .intro {
+  padding-left: 28px;
+  padding-right: 14px;
+  margin-bottom: 20px;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #F9F5F0;
+}
+
+.popular-items-title,
+.popular-manufacturers-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425C;
+  text-transform: uppercase;
+}
+
+.items-list {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 20px;
+
+  list-style: none;
+}
+
+.items-list .item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+
+
+  font-family: 'PT Sans';
+  font-weight: 700;
+  line-height: 20px;
+
+  border: 1px solid #EAEAEA;
+}
+
+.item h3 {
+  color: #000000;
+  text-align: center;
+}
+
+.item .old-price {
+  text-align: center;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.item .new-price {
+  display: block;
+  margin-bottom: 21px;
+
+  padding: 10px 44px 10px 32px;
+
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--White);
+
+  background-image: url('../img/price-shape.svg');
+  background-size: 141px 38px;
+  background-repeat: no-repeat;
+  background-position: 40% 50%;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.item-card {
+  width: 220px;
+  height: 318px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/*
 .popular-items .wrapper {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 90px 318px;
   gap: 20px;
 
-  /*margin-top: 60px;*/
+  margin-top: 60px;
   margin-bottom: 70px;
 
 
   grid-template-areas:
-    'popular-items-list popular-items-list red-btns red-btns'
     'item-1 item-2 item-3 item-4';
-}
-
-.popular-items-list {
-  grid-area: popular-items-list;
-}
-
-.red-btns {
-  grid-area: red-btns;
 }
 
 .item-1 {
@@ -350,31 +430,63 @@
 .item-4 {
   grid-area: item-4;
 }
+*/
+
+.red-btns {
+  padding: 10px 24px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--White);
+
+  background: var(--Basic-red);
+}
+
 
 /*========================= MAIN-POPULAR-MANUFACTURERS ==========================*/
 
-.manufacturers .wrapper {
+.manufacturers .intro {
+  padding-left: 28px;
+  padding-right: 14px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #F9F5F0;
+}
+
+.manufacturers .manufacturers-list {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
-  grid-template-rows: 90px 145px 145px;
+  grid-template-rows: 145px 145px;
   gap: 20px;
 
   /*margin-top: 60px;*/
   margin-bottom: 70px;
 
 
+
   grid-template-areas:
-    'popular-items-list popular-items-list red-btns red-btns'
     'manufacturer-1 manufacturer-2 manufacturer-3 manufacturer-4'
     'manufacturer-5 manufacturer-6 manufacturer-7 manufacturer-8';
 }
 
-.popular-manufacturers-list {
-  grid-area: popular-items-list;
-}
 
-.red-btns {
-  grid-area: red-btns;
+.manufacturer-1,
+.manufacturer-2,
+.manufacturer-3,
+.manufacturer-4,
+.manufacturer-5,
+.manufacturer-6,
+.manufacturer-7,
+.manufacturer-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #EAEAEA;
 }
 
 .manufacturer-1 {
@@ -409,6 +521,34 @@
   grid-area: manufacturer-8;
 }
 
+/*========================= ABOUT-COMPANY ==========================*/
+
+.about-company .wrapper {
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info h3,
+.map h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.description-text {
+  font-family: PT-Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.list-items-text {
+  color: #000000;
+}
 
 
 
