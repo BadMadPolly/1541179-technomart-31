@@ -135,63 +135,7 @@
         <a href="#">Открыть каталог</a>
         <figcaption>Дрели <br> Соседям на радость!</figcaption>
       </figure>
-    </section>
-
-
-    <section class="popular-items">
-
-      <div class="wrapper">
-
-        <div class="intro">
-          <h2 class="popular-items-title">Популярные товары:</h2>
-          <a class="red-btns" href="#">Все популярные товары</a>
-        </div>
-
-        <ul class="items-list">
-
-          <li class="item">
-            <article class="item-card">
-              <img src="img/bosch-9000.jpg" width="184" height="164" alt="BOSCH-BFG-9000">
-              <h3>Перфоратор BOSCH BFG 9000</h3>
-              <p class="old-price"><del>32500 р.</del></p>
-              <a class="new-price" href="#">25500 р.</a>
-            </article>
-          </li>
-
-          <li class="item">
-            <article class="item-card">
-              <img src="img/bosch-3000.jpg" width="184" height="164" alt="BOSCH-BFG-3000">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="old-price"><del>22500 р.</del></p>
-              <a class="new-price" href="#">15500 р.</a>
-            </article>
-          </li>
-
-          <li class="item">
-            <article class="item-card">
-              <img src="img/bosch-6000.jpg" width="184" height="164" alt="BOSCH-BFG-6000">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p class="old-price"><del>30500 р.</del></p>
-              <a class="new-price" href="#">25500 р.</a>
-            </article>
-          </li>
-
-          <li class="item">
-            <article class="item-card">
-              <img src="img/bosch-2000.jpg" width="184" height="164" alt="BOSCH-BFG-2000">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
-              <p class="old-price"><del>22500 р.</del></p>
-              <a class="new-price" href="#">15500 р.</a>
-            </article>
-          </li>
-        </ul>
-      </div>
-
-    </section>-->
-
-
-
-
+    </section> -->
 
     <section class="popular-products">
 
@@ -236,29 +180,10 @@
             </article>
           </li>
 
-          <!--
-          .popular-products {}
-          .intro {}
-          .intro-title {}
-          .intro-button {}
-
-          .product-list {}
-
-          .product-card {}
-          .product-card .photo {}
-          .product-card .title {}
-          .product-card .old-price {}
-          .product-card .new-price {}
-          -->
         </ul>
       </div>
 
     </section>
-
-
-
-
-
 
 
     <section class="manufacturers">
@@ -307,44 +232,59 @@
       </div>
     </section>
 
-    <section class="service">
-      <h2>Сервисы</h2>
-      <p>
-        Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
-        покупки приятными.
-      </p>
-      <ul>
-        <li><button class="service-btn" type="button">Доставка</button></li>
-        <li><button class="service-btn" type="button">Гарантия</button></li>
-        <li><button class="service-btn" type="button">Кредит</button></li>
-      </ul>
+    <section class="features">
+      <div class="wrapper">
 
-      <ul class="service-list">
-        <li>
-          <h3>Доставка</h3>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          </p>
-          <p>
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-          </p>
-        </li>
-        <li>
-          <h3>Гарантия</h3>
-          <p>
-            Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
-            возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-          </p>
-          <p>Дом уж восстановите как-нибудь сами.</p>
-        </li>
-        <li>
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще!</p>
-          <p>Кредитные консультанты придут вам на помощь.</p>
-          <a href="#">Отправить заявку</a>
-        </li>
-      </ul>
+        <h2 class="title">Сервисы</h2>
+        <p class="text">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+        <p class="text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+        <div class="slider">
+          <input type="radio" name="features" id="feature-1" checked>
+          <input type="radio" name="features" id="feature-2">
+          <input type="radio" name="features" id="feature-3">
+
+          <div class="togglers">
+            <label class="toggler" for="feature-1">Доставка</label>
+            <label class="toggler" for="feature-2">Гарантия</label>
+            <label class="toggler" for="feature-3">Кредит</label>
+          </div>
+
+          <div class="slides">
+
+            <div class="slide slide--1">
+              <h3 class="slide-name">Доставка</h3>
+              <p class="slide-text">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              </p>
+              <p class="slide-text">
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+              </p>
+            </div>
+
+            <div class="slide slide--2">
+              <h3 class="slide-name">Гарантия</h3>
+              <p class="slide-text">
+                Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+                спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                товар на новый.
+              </p>
+              <p class="slide-text"> Дом уж восстановите как-нибудь сами.</p>
+            </div>
+
+            <div class="slide slide--3">
+              <h3 class="slide-name">Кредит</h3>
+              <p class="slide-text">Залезть в долговую яму стало проще!</p>
+              <p class="slide-text">Кредитные консультанты придут вам на помощь.</p>
+              <a class="red-btns" href=#>Отправить заявку</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </section>
+
+
 
     <section class="about-company">
       <h2 class="visually-hidden">О компании</h2>

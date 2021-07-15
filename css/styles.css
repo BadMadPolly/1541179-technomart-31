@@ -415,39 +415,6 @@ img {
   box-sizing: border-box;
 }
 
-
-
-/*
-.popular-items .wrapper {
-  display: grid;
-  grid-template-columns: 220px 220px 220px 220px;
-  gap: 20px;
-
-  margin-top: 60px;
-  margin-bottom: 70px;
-
-
-  grid-template-areas:
-    'item-1 item-2 item-3 item-4';
-}
-
-.item-1 {
-  grid-area: item-1;
-}
-
-.item-2 {
-  grid-area: item-2;
-}
-
-.item-3 {
-  grid-area: item-3;
-}
-
-.item-4 {
-  grid-area: item-4;
-}
-*/
-
 .red-btns {
   padding: 10px 24px;
 
@@ -564,7 +531,7 @@ img {
 }
 
 .description-text {
-  font-family: PT-Sans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -685,4 +652,129 @@ img {
   background-position: 40% 50%;
   border-radius: 2px;
   cursor: pointer;
+}
+
+/*========================= SERVICE  ==========================*/
+
+.features {
+}
+
+.features .wrapper {
+  height: 522px;
+
+  background-color: var(--Basic-background);
+}
+
+.features .title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.features .text {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.features .slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features input {
+  display: none;
+}
+
+.features .slide {
+  display: none;
+}
+
+.features #feature-1:checked ~ .togglers .toggler:nth-of-type(1),
+.features #feature-2:checked ~ .togglers .toggler:nth-of-type(2),
+.features #feature-3:checked ~ .togglers .toggler:nth-of-type(3){
+
+  /*padding: 8px 138px 18px 22px;*/
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: #32425C;
+
+  background: var(--White);
+}
+
+.features #feature-1:checked ~ .slides .slide:nth-of-type(1),
+.features #feature-2:checked ~ .slides .slide:nth-of-type(2),
+.features #feature-3:checked ~ .slides .slide:nth-of-type(3){
+    display: block;
+}
+
+
+.features .togglers {
+  display: flex;
+  flex-direction: column;
+}
+
+.features .toggler {
+  width: 240px;
+  height: 61px;
+  padding-top: 14px;
+  padding-left: 22px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+
+  vertical-align: middle;
+
+  background: #32425C;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.features .slides {}
+
+
+.slide--1 {
+  width: 600px;
+  height: 261px;
+
+  background-image: url('../img/delivery.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.slide--2 {
+  width: 600px;
+  height: 283px;
+
+  background-image: url('../img/guarantee.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.slide--3 {
+  width: 600px;
+  height: 285px;
+
+  background-image: url('../img/credit.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.features .slide-name {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425C;
+}
+
+.features .slide-text {
+  width: 330px;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
 }
