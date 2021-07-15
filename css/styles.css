@@ -570,7 +570,7 @@ img {
   background-image: url('../img/price-shape.svg');
   background-size: 141px 38px;
   background-repeat: no-repeat;
-  background-position: 40% 50%;
+  background-position: 55% 50%;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -843,7 +843,7 @@ img {
 
 /*=========================================== CATALOG-PAGE  ===========================================*/
 .page-catalog {
-  font-family: PT-Sans, Arial, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 13px;
   color: var(--basic-black);
@@ -969,7 +969,7 @@ img {
   color: #A9A9A9;
 }
 
-.catalog-products .new-price {
+.catalog-products .new-price, .price {
   display: block;
   margin-bottom: 21px;
 
@@ -985,9 +985,32 @@ img {
   background-image: url('../img/price-shape.svg');
   background-size: 141px 38px;
   background-repeat: no-repeat;
-  background-position: 40% 50%;
+  background-position: 55% 50%;
   border-radius: 2px;
 }
 
+
+.about-rockdrills {
+  width: 100%;
+  background-color: var(--Basic-background);
+}
+
+.about-rockdrills .wrapper {
+  padding-top: 64px;
+  height: 261px;
+}
+
+.about-rockdrills .title {
+  font-family: Cuprum;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.about-rockdrills .text {
+  text-transform: none;
+}
 
 
