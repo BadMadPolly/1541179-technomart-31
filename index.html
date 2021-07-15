@@ -96,20 +96,42 @@
           <h3>Техника</h3>
           <a class="main-btn" href="#">Для стройки</a>
         </div>
-        <div class="slider" hidden>
-          <button class="gallery-button-back" type="button" aria-label="предыдущий слайд"></button>
-          <button class="gallery-button-next" type="button" aria-label="следующий слайд"></button>
-          <figure class="slider-content-1">
-            <img src="img/slider/drill.jpg" width="620" height="266" alt="Рабочий с перфоратором">
-            <a href="#">Открыть каталог</a>
-            <figcaption>Перфораторы <br> Настоящие мужские игрушки</figcaption>
-          </figure>
-          <figure class="slider-content-2">
-            <img src="img/slider/perforator.jpg" width="620" height="266" alt="Рабочий с дрелью">
-            <a href="#">Открыть каталог</a>
-            <figcaption>Дрели <br> Соседям на радость!</figcaption>
-          </figure>>
+
+        <div class="category-slider">
+          <!--<div class="wrapper">-->
+          <div class="slider">
+            <input type="radio" name="slides" id="slide-1" checked>
+            <input type="radio" name="slides" id="slide-2">
+
+            <div class="togglers">
+              <label class="toggler" for="slide-1"></label>
+              <label class="toggler" for="slide-2"></label>
+            </div>
+
+            <div class="category-slides">
+              <div class="category-slide slider--1">
+                <h3 class="slide-title">Перфораторы</h3>
+                <p class="slide-text">Настоящие мужские игрушки</p>
+                <a class="intro-button" href="#">Открыть каталог</a>
+
+                <label class="prev-slide" for="slide-2"></label>
+                <label class="next-slide" for="slide-2"></label>
+              </div>
+
+              <div class="category-slide slider--2">
+                <h3 class="slide-title">Дрели</h3>
+                <p class="slide-text">Соседям на радость!</p>
+                <a class="intro-button" href="#">Открыть каталог</a>
+
+                <label class="prev-slide" for="slide-1"></label>
+                <label class="next-slide" for="slide-1"></label>
+
+              </div>
+            </div>
+          </div>
         </div>
+
+
         <div class="sales">
           <h3>Скидки 50%</h3>
           <a class="main-btn" href="#">На 350 товаров</a>
@@ -118,24 +140,9 @@
           <h3>Доставка</h3>
           <a class="main-btn" href="#">Бесплатно</a>
         </div>
-
       </div>
     </div>
 
-    <!--  <section class="slider">
-      <button class="gallery-button-back" type="button" aria-label="предыдущий слайд"></button>
-      <button class="gallery-button-next" type="button" aria-label="следующий слайд"></button>
-      <figure class="slider-content-1">
-        <img src="img/slider/drill.jpg" width="620" height="266" alt="Рабочий с перфоратором">
-        <a href="#">Открыть каталог</a>
-        <figcaption>Перфораторы <br> Настоящие мужские игрушки</figcaption>
-      </figure>
-      <figure class="slider-content-2">
-        <img src="img/slider/perforator.jpg" width="620" height="266" alt="Рабочий с дрелью">
-        <a href="#">Открыть каталог</a>
-        <figcaption>Дрели <br> Соседям на радость!</figcaption>
-      </figure>
-    </section> -->
 
     <section class="popular-products">
 
@@ -191,7 +198,7 @@
 
         <div class="intro">
           <h2 class="popular-manufacturers-title">Популярные производители:</h2>
-          <a class="red-btns" href="#">Все производители</a>
+          <a class="intro-button" href="#">Все производители</a>
         </div>
 
         <div class="manufacturers-list">
@@ -276,14 +283,13 @@
               <h3 class="slide-name">Кредит</h3>
               <p class="slide-text">Залезть в долговую яму стало проще!</p>
               <p class="slide-text">Кредитные консультанты придут вам на помощь.</p>
-              <a class="red-btns" href=#>Отправить заявку</a>
+              <a class="intro-button" href=#>Отправить заявку</a>
             </div>
 
           </div>
         </div>
       </div>
     </section>
-
 
 
     <section class="about-company">
@@ -310,7 +316,7 @@
               <p class="list-items-text">ЖелДорЭкспедиция</p>
             </li>
           </ul>
-          <a class="red-btns" href=#>Подробнее о компании</a>
+          <a class="intro-button" href=#>Подробнее о компании</a>
         </section>
 
         <section class="map">
@@ -320,7 +326,7 @@
           </p>
           <a href="maps.google.com"><img class="map-img" src="img/map.png" width="300" height="158"
               alt="Карта магазина по адресу наб. Реки Карповки, 5 лит П"></a>
-          <a class="red-btns" href=#>Заблудились? Напишите нам!</a>
+          <a class="intro-button" href=#>Заблудились? Напишите нам!</a>
         </section>
 
       </div>
@@ -341,7 +347,7 @@
             <label for="feedback-text">Текст письма:</label>
             <input id="feedback-text" type="text" name="text" placeholder="В свободной форме">
           </p>
-          <button class="red-btns" type="submit">Отправить</button>
+          <button class="intro-button" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
       </section>
