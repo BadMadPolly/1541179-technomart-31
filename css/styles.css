@@ -258,12 +258,24 @@ img {
   background-color: var(--Special-yellow);
 }
 
+.main-buttons .materials {
+  background-image: url("../img/icon-bucket.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 55%;
+}
+
 .instruments {
   grid-area: instruments;
 
   padding-left: 23px;
 
   background-color: var(--Special-blue);
+}
+
+.main-buttons .instruments {
+  background-image: url("../img/icon-drill.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 55%;
 }
 
 .technology {
@@ -274,6 +286,12 @@ img {
   background-color: var(--Special-lilac);
 }
 
+.main-buttons .technology {
+  background-image: url("../img/icon-tractor.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 55%;
+}
+
 .sales {
   grid-area: sales;
 
@@ -282,12 +300,24 @@ img {
   background-color: var(--Special-greenlight);
 }
 
+.main-buttons .sales {
+  background-image: url("../img/icon-trolley.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 55%;
+}
+
 .delivery {
   grid-area: delivery;
 
   padding-left: 23px;
 
   background-color: var(--Special-yellow);
+}
+
+.main-buttons .delivery {
+  background-image: url("../img/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 55%;
 }
 
 .category-slider {
