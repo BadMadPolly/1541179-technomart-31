@@ -1013,4 +1013,41 @@ img {
   text-transform: none;
 }
 
+.pagination {}
+
+.pagination .wrapper {}
+
+.pagination .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: 236px;
+  list-style: none;
+}
+
+.pagination .pagination-item {
+  margin-right: 10px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination .pagination-link {
+  display: block;
+  padding: 10px 15px;
+
+  text-decoration: none;
+
+  color: #000000;
+  background-color: var(--White);
+
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+
+
 
