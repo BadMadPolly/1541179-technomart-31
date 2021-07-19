@@ -21,24 +21,25 @@
 <body class="page-body">
 
   <header class="main-header">
+
     <section class="main-header-top">
       <div class="wrapper">
         <a href="#" class="main-header-logo">
-          <img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»">
+          <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form class="main-header-search" action="#" method="get">
           <label for="search">Поиск:</label>
           <input id="search" type="search">
         </form>
         <ul class="user-navigation">
-          <li class="marks">
-            <a href="#">Закладки: 0</a>
+          <li class="user-navigation-item">
+            <a class="marks" href="#">Закладки: 0</a>
           </li>
-          <li class="cart">
-            <a href="#">Корзина: 0</a>
+          <li class="user-navigation-item">
+            <a class="cart" href="#">Корзина: 0</a>
           </li>
-          <li class="order">
-            <a href="#">Оформить заказ</a>
+          <li class="user-navigation-item">
+            <a class="order" href="#">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -50,12 +51,16 @@
         <p class="main-page-title">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
+        <div class="contacts">
+          <a class="header-contact-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <address class="header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+        </div>
 
-        <a class="header-contact-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <address class="header-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+        <div class="links">
+          <a class="login-link" href="#">Войти</a>
+          <a class="signup-link" href="#">Регистрация</a>
+        </div>
 
-        <a class="login-link" href="#">Войти</a>
-        <a class="signup-link" href="#">Регистрация</a>
       </div>
     </section>
 
@@ -111,7 +116,7 @@
               <div class="category-slide slider--1">
                 <h3 class="slide-title">Перфораторы</h3>
                 <p class="slide-text">Настоящие мужские игрушки</p>
-                <a class="intro-button" href="#">Открыть каталог</a>
+                <a class="intro-button" href="catalog.html">Открыть каталог</a>
 
                 <label class="prev-slide" for="slide-2"></label>
                 <label class="next-slide" for="slide-2"></label>
@@ -323,7 +328,9 @@
           <p class="description-text">
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <a href="maps.google.com"><img class="map-img" src="img/map.png" width="300" height="158"
+          <a
+            href="https://www.google.ru/maps/place/наб.+Реки+Карповки/@59.9686267,30.312212,17z/data=!3m1!4b1!4m5!3m4!1s0x4696315a4bdf3f1b:0x1c8b299cbcd21256!8m2!3d59.968624!4d30.314406/"><img
+              class="map-img" src="img/map.png" width="300" height="158"
               alt="Карта магазина по адресу наб. Реки Карповки, 5 лит П"></a>
           <a class="intro-button" href=#>Заблудились? Напишите нам!</a>
         </section>
@@ -334,83 +341,128 @@
       <section class="modal modal-feedback">
         <h2 class="visually-hidden">Обратная форма</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="feedback-name">Ваше имя:</label>
-            <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="feedback-email">Ваш e-mail:</label>
-            <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="feedback-text">Текст письма:</label>
-            <input id="feedback-text" type="text" name="text" placeholder="В свободной форме">
-          </p>
-          <button class="intro-button" type="submit">Отправить</button>
+
+          <div class="modal-header">
+            <div class="modal-wrapper">
+              <div class="modal-feedback-name">
+                <label for="feedback-name">Ваше имя:</label>
+                <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+              </div>
+              <div class="modal-feedback-email">
+                <label for="feedback-email">Ваш e-mail:</label>
+                <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
+              </div>
+              <div class="modal-feedback-text">
+                <label for="feedback-text">Текст письма:</label>
+                <input id="feedback-text" type="text" name="text" placeholder="В свободной форме">
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="modal-feedback-button">
+              <button class="intro-button" type="submit">Отправить</button>
+            </div>
+          </div>
+
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-feedback-close" type="button"></button>
+
+        </div>
+
       </section>
 
       <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <!-- Здесь будет карта -->
-        <button class="modal-close" type="button">Закрыть</button>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084186758!2d30.315214851237876!3d59.96826598179804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1625481767374!5m2!1sru!2sru"
+          width="980" height="488" allowfullscreen
+          title="Карта магазина по адресу наб. Реки Карповки, 5 лит П"></iframe>
+
+        <button class="modal-feedback-close" type="button"></button>
       </section>
   </main>
 
   <footer class="main-footer">
+
+
     <section class="footer-navigation">
-      <a><img src="img/logo-technomart.svg" width="220" height="47" alt="Логотип магазина «Техномарт»"></a>
-      <ul class="navigation-up">
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
-      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <ul class="navigation-down">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
-    </section>
+      <div class="wrapper">
 
-    <section class="footer-copyright">
-      <p>
-        © 2010–2021 Компания «Техномарт»
-      </p>
-      <p>
-        Все права защищены
-      </p>
+        <a class="footer-logo"><img src="img/logo-technomart.svg" width="220" height="47"
+            alt="Логотип магазина «Техномарт»"></a>
 
-      <section class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button" href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Инстаграм</a>
-          </li>
+        <ul class="navigation-top">
+          <li><a class="navigation-top-items" href="#">Компания</a></li>
+          <li><a class="navigation-top-items" href="#">Новости</a></li>
+          <li><a class="navigation-top-items" href="catalog.html">Каталог</a></li>
+          <li><a class="navigation-top-items" href="#">Доставка</a></li>
+          <li><a class="navigation-top-items" href="#">Контакты</a></li>
         </ul>
-      </section>
 
-      <p>
-        Обратная связь:
-      </p>
-      <address><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></address>
-      <p>
-        Разработано -
-      </p>
-      <a href="htmlacademy.ru">htmlacademy.ru</a>
+        <div class="footer-contacts">
+          <address>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</address>
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        </div>
 
+        <ul class="navigation-bottom">
+          <li><a class="navigation-bottom-items" href="#">Материалы</a></li>
+          <li><a class="navigation-bottom-items" href="#">Техника</a></li>
+          <li><a class="navigation-bottom-items" href="#">Инструмент</a></li>
+          <li><a class="navigation-bottom-items" href="#">Спецпредложения</a></li>
+        </ul>
+
+      </div>
     </section>
 
+    <div class="footer-links">
+      <div class="wrapper">
+
+        <section class="footer-copyright">
+          <p>
+            © 2010–2021 Компания «Техномарт»
+          </p>
+          <p>
+            Все права защищены
+          </p>
+        </section>
+
+
+        <section class="footer-social">
+          <ul class="footer-social-list">
+            <li>
+              <a class="social-link-vk" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li>
+              <a class="social-link-fb" href="https://facebook.com/htmlacademy"></a>
+            </li>
+            <li>
+              <a class="social-link-ig" href="https://instagram.com/htmlacademy"></a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-feedback">
+          <div class="feedback-mail">
+            <span>
+              Обратная связь:
+            </span>
+            <address><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></address>
+
+          </div>
+
+          <div class="feedback-development">
+            <span>
+              Разработано -
+            </span>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
   </footer>
 
   <p>
